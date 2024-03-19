@@ -16,7 +16,7 @@
         </div>
 
         <!-- === Calculation Area === -->
-        <div class="bg-orange-600 w-96 p-8 rounded-lg mb-8 shadow-2xl">
+        <div class="bg-orange-800 w-96 p-8 rounded-lg mb-8 shadow-2xl">
             <label class="block text-xl font-medium mb-4" for="totalBill">Total Bill
                 <input class="block text-base font-normal px-4 py-2 w-full rounded mt-2 text-slate-800" type="number" id="totalBill" placeholder="Enter Your Total Bill">
             </label>
@@ -38,30 +38,30 @@
         </div>
 
         <!-- ===== Summary Area ==== -->
-        <div class="bg-slate-700 shadow-2xl w-96 p-8 rounded-lg flex flex-col gap-2">
+        <div id="summaryContainer" class="bg-slate-700 shadow-2xl w-96 p-8 rounded-lg flex flex-col gap-2 hidden">
             <div>
                 <h3 class="text-xl font-medium mb-2">Bill Summary</h3>
             </div>
             <div class="flex items-center justify-between">
                 <h4 class="font-medium">Total Bill</h4>
-                <h4>$<span>120</span></h4>
+                <h4>$<span id="total">120</span></h4>
             </div>
 
             <div class="flex items-center justify-between">
                 <h4 class="font-medium">Tip Amount</h4>
-                <h4>$ <span>10</span></h4>
+                <h4>$ <span id="tipAmount">10</span></h4>
             </div>
 
             <div class="flex items-center justify-between">
                 <h4 class="font-medium">Tax 5%</h4>
-                <h4>$ <span>4</span></h4>
+                <h4>$ <span id="taxAmount">4</span></h4>
             </div>
 
             <div class="w-full h-1 bg-white"></div>
 
             <div class="flex items-center justify-between">
                 <h4 class="font-medium">Total Per Person</h4>
-                <h4>$ <span>260</span></h4>
+                <h4>$ <span id="netAmount">260</span></h4>
             </div>
         </div>
     </div>
