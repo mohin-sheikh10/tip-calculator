@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ==== TailWind CDN link ==== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 text-white overflow-x-hidden uppercase" >
+    <div class="container mx-auto flex flex-col items-center justify-center w-full h-screen">
+        <!-- === Heading === -->
+        <div class="bg-gray-500 px-12 py-4 rounded mb-8 w-96 shadow-2xl">
+            <h2 class="text-3xl font-bold text-center">Tip Calculator</h2>
+        </div>
+
+        <!-- === Calculation Area === -->
+        <div class="bg-orange-600 w-96 p-8 rounded-lg mb-8 shadow-2xl">
+            <label class="block text-xl font-medium mb-4" for="totalBill">Total Bill
+                <input class="block text-base font-normal px-4 py-2 w-full rounded mt-2 text-slate-800" type="number" id="totalBill" placeholder="Enter Your Total Bill">
+            </label>
+            <label class="block text-xl font-medium mb-4" for="tips">Tip%
+                <input class="block text-base font-normal px-4 py-2 w-full rounded mt-2 text-slate-800" type="number" name="" id="tips" placeholder="Expected Tip">
+            </label>
+
+            <div class="flex flex-col gap-2">
+                <h4 class="font-medium text-xl">People</h4>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <button id="minusBtn" class="bg-slate-800 pb-2 w-10 h-10 rounded-full text-2xl flex items-center justify-center">-</button>
+                        <span id="personValue" class="font-medium text-2xl">1</span>
+                        <button id="plusBtn" class="bg-slate-500 w-10 h-10 pb-2 rounded-full text-2xl flex items-center justify-center">+</button>
+                    </div>
+                    <button id="calculateBtn" class="bg-gray-400 py-2 text-white font-medium tracking-wider px-8 rounded-full">Calculate</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Summary Area ==== -->
+        <div class="bg-slate-700 shadow-2xl w-96 p-8 rounded-lg flex flex-col gap-2">
+            <div>
+                <h3 class="text-xl font-medium mb-2">Bill Summary</h3>
+            </div>
+            <div class="flex items-center justify-between">
+                <h4 class="font-medium">Total Bill</h4>
+                <h4>$<span>120</span></h4>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <h4 class="font-medium">Tip Amount</h4>
+                <h4>$ <span>10</span></h4>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <h4 class="font-medium">Tax 5%</h4>
+                <h4>$ <span>4</span></h4>
+            </div>
+
+            <div class="w-full h-1 bg-white"></div>
+
+            <div class="flex items-center justify-between">
+                <h4 class="font-medium">Total Per Person</h4>
+                <h4>$ <span>260</span></h4>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ==== Script File ==== -->
+    <script src="script/app.js"></script>
+</body>
+</html>
